@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Greeting Form</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        form {
+            float: left;
+            padding: 10px;
+            margin: 10px;
+            width: 50%;
+            background-color: gray;
+            border: solid 2px black;
+        }
+        h1 {
+            font-weight: bold;
+            border: solid 2px black;
+            text-align: center;
+            background-color: lightgray;
+        }
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple Form</h2>
+
+    <a class="btn btn-primary cmdInstructions" role="button" data-toggle="collapse"
+       href="#instructions" aria-expanded="false"
+       aria-controls="instructions">
+        Show/Hide Instructions
+    </a>
+
+    <div id="instructions" class="collapse">
+        <div class="well instructions ">
+            <div>
+                <span class="label label-success label-as-badge">1</span>
+                <span>
+                    Read Values from input box First Name and Last Name
+                </span>
+            </div>
+
+            <div>
+                <span class="label label-success label-as-badge">2</span>
+                <span>
+                    On clicking button "Get Full Name", compute full name by concatenating First Name and Last Name and show in input box - Full Name<br />
+                </span>
+            </div>
+
+            <div>
+                <span class="label label-success label-as-badge">3</span>
+                <span>
+                    On clicking button "Send Greeting", show message "Hello, {full name}" as content of <strong>p</strong> tag with class "message" <br />
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <!--Put Form here-->
+        <form>
+            <h1>4. Read Form</h1>
+            <p>First Name:</p>
+            <input type="text" id="firstName" placeholder="Enter your first name" />
+            <p>Last Name:</p>
+            <input type="text" id="lastName" placeholder="Enter your last name" />
+            <p></p>
+            <input type="button" id="getFullName" value="Get Full Name" />
+            <p></p>
+            <input type="text" class="fullName" />
+            <p></p>
+            <input type="button" id="greetings" value="Send Greetings" />
+            <p></p>
+            <p class="message"></p>
+        </form>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#getFullName").on("click", userName);
+            $("#greetings").on("click", greetUser);
+        });
+
+        // input box for first and last name, concatenated to get full name
+        var userName = function() {
+            var firstName = $("#firstName").val();
+            var lastName = $("#lastName").val();
+            var fullName = firstName + " " + lastName;
+            $(".fullName").val(fullName);
+        }
+
+        // greeting message
+        var greetUser = function () {
+            var fullName = $(".fullName").val();
+            $(".message").text("Hello, " + fullName + "! Let's code today!");
+        }
+    </script>
+</body>
+</html>
