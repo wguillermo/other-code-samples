@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audi Fanatics</title>
+        <link rel="stylesheet" href="audiFanPage.css">
+    </head>
+    <body>
+        <!-- header -->
+        <table align="center">
+            <tr>
+                <td><img src="https://s-media-cache-ak0.pinimg.com/originals/9d/16/70/9d167058a918a79ecb4f839ca08684f9.jpg" alt="Audi logo" height="200"></td>
+                <td><h1>Audi Fanatics</h1></td>
+            </tr>
+        </table>
+        <hr>
+        
+        <!-- links -->
+        <table align="center">
+            <tr>
+                <td><button><a href="https://www.audiusa.com/" target="_blank">Official Audi USA</a></button></td>
+                <td><button><a href="https://en.wikipedia.org/wiki/Audi" target="_blank">Audi Wikipedia</a></button></td>
+                <td><button><a href="https://www.audiworld.com/forums/" target="_blank">Audi Forum</a></button></td>
+            </tr>
+        </table>
+        <hr>
+        
+        <!-- body | who we are -->
+        <br>
+        <div align="center">
+            <h2 id="who">Who we are</h2>
+            <p>We are a group of <b>Audi <em>fanatics</em></b>. This site is dedicated to the Audi brand. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum cursus massa vitae tristique. In laoreet sem non est bibendum, finibus lobortis turpis porta. Ut auctor orci ut quam elementum blandit. Etiam dignissim orci nec magna fermentum aliquet. Suspendisse sodales id justo blandit finibus. Maecenas scelerisque sit amet dolor ac varius. Ut sed dui mollis quam vulputate sollicitudin. Cras laoreet felis et ipsum laoreet cursus. Mauris vel sem at enim molestie mattis ac sit amet dui. Pellentesque sem nunc, commodo quis imperdiet ut, dapibus vitae odio. Donec in turpis purus. Sed porttitor massa at interdum hendrerit.</p>
+            <p>Vestibulum eu ullamcorper nibh, eu porta lorem. Donec efficitur gravida orci sed dapibus. Vestibulum iaculis sollicitudin nunc, sed consectetur sapien. Nam ac enim eu lacus cursus faucibus. Ut lobortis posuere lectus, et maximus eros sodales vitae. Vestibulum erat nulla, porta sit amet mi nec, bibendum tempor mauris. Integer gravida elit id erat maximus placerat. Etiam vel gravida sapien.</p>
+            <p>Suspendisse potenti. Maecenas euismod eros eget viverra lacinia. Praesent congue placerat ultricies. Quisque ac augue at enim tempus cursus et a orci. Vestibulum consequat nisl vitae arcu condimentum, non lacinia nunc vulputate. In ullamcorper vel sapien ac accumsan. Duis vitae purus facilisis, rhoncus felis sollicitudin, molestie leo. Proin et ornare neque. Fusce lorem dolor, euismod eget mauris eget, posuere imperdiet risus. Nulla ornare scelerisque lorem, eu dapibus sapien consequat a. Fusce ultrices aliquet velit, at hendrerit enim mattis eu. Nam nec nulla eu ante molestie interdum dictum non purus.</p>
+        </div>
+        
+        <!-- body | video and still gallery -->
+        <h2 class="sport">Audi Sport</h2>
+        <div style="text-align: center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HVyAy7A4jOc" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <br>
+        <h2 align="center">Image Gallery</h2>
+        <table border="1" cellpadding="5">
+            <tr>
+                <td><img src="http://st.motortrend.com/uploads/sites/5/2016/05/2017-Audi-R8-V10-front-three-quarter-02-e1462995915964.jpg?interpolation=lanczos-none&fit=around%7C660%3A440" height="300" width="500" alt="Audi R8"></td>
+                <td><img src="http://images.car.bauercdn.com/pagefiles/70590/audi_rs5_77.jpg" height="300" width="500" alt="Audi RS5"></td>
+                <td><img src="https://timedotcom.files.wordpress.com/2017/05/audi-sq5-hero.jpg?quality=85" height="300" width="500" alt="Audi SQ5"></td>
+            </tr>
+            <tr>
+                <td><img src="https://media.ed.edmunds-media.com/audi/q3/2017/ot/2017_audi_q3_LIFE1_ot_1102162_1280.jpg" height="300" width="500" alt="Audi Q3"></td>
+                <td><img src="https://i.ytimg.com/vi/JHqbwiAILgA/maxresdefault.jpg" height="300" width="500" alt="Audi S4"></td>
+                <td><img src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/10/2017-Audi-S8-Plus-1.jpg" height="300" width="500" alt="Audi S8"></td>
+            </tr>
+            <tr>
+                <td><img src="http://st.automobilemag.com/uploads/sites/11/2017/03/2018-Audi-S5-rear-end.jpg" height="300" width="500" alt="Audi S5"></td>
+                <td><img src="https://media.ed.edmunds-media.com/audi/q7/2017/ot/2017_audi_q7_LIFE1_ot_11021610_1280.jpg" height="300" width="500" alt="Audi Q7"></td>
+                <td><img src="https://i.ytimg.com/vi/hFvj9ETJsx0/maxresdefault.jpg" height="300" width="500" alt="Audi S6"></td>
+            </tr>
+            <tr>
+                <td><img src="http://wpmedia.driving.ca/2017/03/dsc09423.jpg?quality=70&strip=all&w=1024" height="300" width="500" alt="Audi RS3"></td>
+                <td><img src="https://i.ytimg.com/vi/3GfWE_kJIwE/maxresdefault.jpg" height="300" width="500" alt="Audi TTRS"></td>
+                <td><img src="https://i.ytimg.com/vi/2YWpQayFNMY/maxresdefault.jpg" height="300" width="500" alt="Audi RS7"></td>
+            </tr>
+        </table>
+        
+        <!-- body | contact -->
+        <div>
+            <h3 align="center">Contact Us</h3>
+            <p><b>Audi <em>fanatics</em></b> Cras hendrerit turpis sed ligula tempus lobortis. Suspendisse potenti. Pellentesque laoreet velit et risus semper, et pretium est dapibus. Cras gravida luctus orci sed imperdiet. Donec eget erat sem. In ut tincidunt massa, quis accumsan tellus. Sed luctus, erat a bibendum tempor, sem risus mollis sem, sit amet congue sem massa sit amet turpis. Morbi et tellus sem. Fusce sit amet tortor lacus. In facilisis ipsum massa, id ultricies magna vestibulum rutrum. Praesent tempor turpis ex, in rhoncus tortor porttitor ut. Nunc non lobortis nisl. Vestibulum ut placerat justo.</p>
+            <br>
+            <form>
+                <p><b>Name:</b></p>
+                <input type="text" placeholder="Enter name">
+                <p><b>Email:</b></p>
+                <input type="email" placeholder="Enter email">
+                <br>
+                <br>
+                <button><b>Submit</b></button>
+            </form>
+        </div>
+        
+        <!-- footer -->
+        <p align="center">&copy; 2016. All rights reserved.</p>
+    </body>
+</html>
